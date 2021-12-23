@@ -1,0 +1,35 @@
+plugins {
+    id 'idea'
+}
+
+description 'spring-turbo-examples'
+
+allprojects {
+    group 'com.github.yingzhuo'
+    version '0.0.0'
+
+    ext {
+        isSnapshot = version.endsWith("-SNAPSHOT")
+    }
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
+    }
+
+    configurations.all {
+        exclude group: "org.junit.vintage", module: "junit-vintage-engine"
+        exclude group: "org.apache.logging.log4j", module: "log4j-to-slf4j"
+        exclude group: "com.vaadin.external.google", module: "android-json"
+    }
+}
+
+wrapper {
+    gradleVersion = '7.3.2'
+}

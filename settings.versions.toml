@@ -1,0 +1,39 @@
+# ======================================================================================================================
+# 版本号
+# ======================================================================================================================
+[versions]
+springboot = "2.6.2"
+springturbo = "1.0.0-SNAPSHOT"
+
+# ======================================================================================================================
+# 库
+# ======================================================================================================================
+[libraries]
+
+# spring-boot
+spring-boot-processor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor", version.ref = "springboot" }
+spring-boot-autoconfig = { group = "org.springframework.boot", name = "spring-boot-autoconfigure", version.ref = "springboot" }
+spring-boot-test = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "springboot" }
+spring-boot-web = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springboot" }
+spring-boot-cache = { group = "org.springframework.boot", name = "spring-boot-starter-cache", version.ref = "springboot" }
+spring-boot-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springboot" }
+spring-boot-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation", version.ref = "springboot" }
+spring-boot-aop = { group = "org.springframework.boot", name = "spring-boot-starter-aop", version.ref = "springboot" }
+spring-boot-security = { group = "org.springframework.boot", name = "spring-boot-starter-security", version.ref = "springboot" }
+spring-boot-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator", version.ref = "springboot" }
+
+# spring-turbo
+spring-turbo-excel = { group = "com.github.yingzhuo", name = "spring-turbo-module-excel", version.ref = "springturbo" }
+spring-turbo-feign = { group = "com.github.yingzhuo", name = "spring-turbo-module-feign", version.ref = "springturbo" }
+spring-turbo-security = { group = "com.github.yingzhuo", name = "spring-turbo-module-security", version.ref = "springturbo" }
+spring-turbo-security-jwt = { group = "com.github.yingzhuo", name = "spring-turbo-module-security-jwt", version.ref = "springturbo" }
+
+# ======================================================================================================================
+# 包
+# ======================================================================================================================
+[bundles]
+
+# ======================================================================================================================
+# 插件
+# ======================================================================================================================
+[plugins]

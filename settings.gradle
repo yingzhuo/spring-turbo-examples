@@ -1,0 +1,15 @@
+enableFeaturePreview('VERSION_CATALOGS')
+
+rootProject.name = 'spring-turbo-examples'
+include 'example-excel-reading'
+include 'example-security-jwt'
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            from(files('./settings.versions.toml'))
+        }
+    }
+}
+include 'example-feign'
+

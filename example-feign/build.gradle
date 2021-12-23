@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.yingzhuo'
+version '0.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(libs.spring.boot.web)
+    implementation(libs.spring.boot.actuator)
+    implementation(libs.spring.turbo.feign)
+
+    // feign
+    implementation 'io.github.openfeign:feign-core:11.8'
+    implementation 'io.github.openfeign:feign-jackson:11.8'
+    implementation 'io.github.openfeign:feign-slf4j:11.8'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+test {
+    useJUnitPlatform()
+}

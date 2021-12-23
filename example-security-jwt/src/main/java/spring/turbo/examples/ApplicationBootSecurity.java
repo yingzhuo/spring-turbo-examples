@@ -1,0 +1,64 @@
+package spring.turbo.examples;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import spring.turbo.module.security.jwt.AlgorithmFactory;
+import spring.turbo.module.security.jwt.AlgorithmFactoryFactories;
+import spring.turbo.webmvc.token.TokenResolver;
+
+@Configuration
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+class ApplicationBootSecurity extends WebSecurityConfigurerAdapter {
+
+    @Bean
+    AlgorithmFactory algorithmFactory() {
+        return AlgorithmFactoryFactories.hmac256(ApplicationBootSecurity.class.getName());
+    }
+
+    @Bean
+    TokenResolver tokenResolver() {
+        return TokenResolver.builder()
+                .bearerToken()
+                .build();
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+        http.csrf()
+                .disable();
+
+        http.cors()
+                .disable();
+
+        http.httpBasic();
+
+        http.jee()
+                .disable();
+
+        http.formLogin()
+                .disable();
+
+        http.logout()
+                .disable();
+
+        http.rememberMe()
+                .disable();
+
+        http.x509()
+                .disable();
+
+        http.requestCache()
+                .disable();
+
+        http.authorizeHttpRequests()
+                .antMatchers("/**/security/info").hasAnyRole("USER");
+    }
+
+}
