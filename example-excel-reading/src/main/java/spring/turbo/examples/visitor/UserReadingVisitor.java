@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @Header(sheetIndex = 0, rowIndex = 0)
 @ColumnBasedCellParser(sheetIndex = 0, columnIndex = 1, type = MyCellParser.class)
 @Type(ExcelType.XSSF)
+@Filter(type = UserFilter.class)
 public class UserReadingVisitor implements BatchVisitor<User> {
 
     @Autowired
