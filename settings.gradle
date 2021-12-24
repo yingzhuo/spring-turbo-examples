@@ -2,6 +2,7 @@ enableFeaturePreview('VERSION_CATALOGS')
 
 rootProject.name = 'spring-turbo-examples'
 include 'example-excel-reading'
+include 'example-feign'
 include 'example-security-jwt'
 
 dependencyResolutionManagement {
@@ -11,5 +12,4 @@ dependencyResolutionManagement {
         }
     }
 }
-include 'example-feign'
 
