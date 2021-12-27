@@ -29,6 +29,7 @@ spring-turbo-qrcode = { group = "com.github.yingzhuo", name = "spring-turbo-modu
 spring-turbo-captcha = { group = "com.github.yingzhuo", name = "spring-turbo-module-captcha", version.ref = "springturbo" }
 spring-turbo-security = { group = "com.github.yingzhuo", name = "spring-turbo-module-security", version.ref = "springturbo" }
 spring-turbo-security-jwt = { group = "com.github.yingzhuo", name = "spring-turbo-module-security-jwt", version.ref = "springturbo" }
+spring-turbo-security-hutool = { group = "com.github.yingzhuo", name = "spring-turbo-module-security-hutool", version.ref = "springturbo" }
 spring-turbo-webmvc = { group = "com.github.yingzhuo", name = "spring-turbo-module-webmvc", version.ref = "springturbo" }
 
 # ======================================================================================================================
