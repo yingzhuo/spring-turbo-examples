@@ -20,7 +20,7 @@ public class ApplicationBoot implements ApplicationRunner {
     }
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args) {
         petClient.getAll("jwt", Collections.emptyMap()).forEach(System.out::println);
     }
 
