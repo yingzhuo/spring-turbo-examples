@@ -7,9 +7,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import spring.turbo.bean.Pair;
+import spring.turbo.module.predefined.PredefinedSM2;
 import spring.turbo.module.security.encoder.PasswordEncoderFactories;
+import spring.turbo.module.security.hutool.jwt.SM2Algorithm;
 import spring.turbo.module.security.jwt.AlgorithmFactory;
-import spring.turbo.module.security.jwt.AlgorithmFactoryFactories;
 import spring.turbo.webmvc.token.TokenResolver;
 
 @Configuration
@@ -23,7 +25,12 @@ class ApplicationBootSecurity extends WebSecurityConfigurerAdapter {
 
     @Bean
     AlgorithmFactory algorithmFactory() {
-        return AlgorithmFactoryFactories.hmac256(ApplicationBootSecurity.class.getName());
+        final Pair<String, String> pair = PredefinedSM2.loadKeys(9);
+
+        return () -> new SM2Algorithm(
+                pair.getA(),
+                pair.getB()
+        );
     }
 
     @Bean
