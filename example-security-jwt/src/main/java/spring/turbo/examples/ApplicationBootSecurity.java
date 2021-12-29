@@ -20,7 +20,7 @@ class ApplicationBootSecurity extends WebSecurityConfigurerAdapter {
 
     @Bean
     PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder("SHA-512");
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder("morse");
     }
 
     @Bean

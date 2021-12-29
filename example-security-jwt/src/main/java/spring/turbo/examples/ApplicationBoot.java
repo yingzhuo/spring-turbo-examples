@@ -24,7 +24,7 @@ public class ApplicationBoot implements ApplicationRunner {
         final String password = ApplicationBoot.class.getName();
         log.debug("password = {}", password);
         log.debug("hashed password = {}", passwordEncoder.encode(password));
-        log.debug("{}", passwordEncoder.matches(password, "{SM3}e20277c7e4b1e023b8e278f99898a39b1c4cf1a457c52926855a122244ede665"));
+        log.debug("{}", passwordEncoder.matches(password, "{morse}.../.--./.-./../-./--./.-.-.-/-/..-/.-./-.../---/.-.-.-/./-..-/.-/--/.--./.-.././.../.-.-.-/.-/.--./.--./.-../../-.-./.-/-/../---/-./-.../---/---/-/"));
     }
 
 }
