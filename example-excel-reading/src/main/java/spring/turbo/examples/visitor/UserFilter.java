@@ -18,7 +18,6 @@ final class UserFilter implements ValueObjectFilter<User> {
 
     @Override
     public boolean filter(User data) {
-        log.debug("user filter: always true");
         return true;
     }
 

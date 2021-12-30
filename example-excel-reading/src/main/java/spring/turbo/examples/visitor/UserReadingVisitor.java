@@ -16,7 +16,7 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 @BatchProcessor(discriminatorValue = "USER", valueObjectType = User.class)
-@Password("133810")
+@Password(value = "133810", provider = UserPasswordProvider.class)
 @IncludeSheetSet(sheetIndexes = 0)
 @ExcludeRowSet(sheetIndex = 0, rowIndexes = {1})
 @Header(sheetIndex = 0, rowIndex = 0)
