@@ -1,6 +1,7 @@
 package spring.turbo.examples.security;
 
 import com.auth0.jwt.interfaces.DecodedJWT;
+import org.springframework.security.authentication.AuthenticationEventPublisher;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -20,17 +21,20 @@ class JwtAuthFilterFactory implements TokenAuthenticationFilterFactory {
 
     private final AlgorithmFactory algorithmFactory;
     private final TokenResolver tokenResolver;
+    private final AuthenticationEventPublisher authenticationEventPublisher;
 
-    public JwtAuthFilterFactory(AlgorithmFactory algorithmFactory, TokenResolver tokenResolver) {
+    public JwtAuthFilterFactory(AlgorithmFactory algorithmFactory, TokenResolver tokenResolver, AuthenticationEventPublisher authenticationEventPublisher) {
         this.algorithmFactory = algorithmFactory;
         this.tokenResolver = tokenResolver;
+        this.authenticationEventPublisher = authenticationEventPublisher;
     }
 
     @Override
     public TokenAuthenticationFilter create() {
         TokenAuthenticationFilter filter = new TokenAuthenticationFilter();
         filter.setTokenResolver(tokenResolver);
-        filter.setTokenToAuthenticationConverter(new JwtTokenToUserConverter(algorithmFactory));
+        filter.setTokenToUserConverter(new JwtTokenToUserConverter(algorithmFactory));
+        filter.setAuthenticationEventPublisher(authenticationEventPublisher);
         filter.addSkipPredicates(RequestPredicateFactories.pathAntStyleMatches("/**/security/login"));
         return filter;
     }

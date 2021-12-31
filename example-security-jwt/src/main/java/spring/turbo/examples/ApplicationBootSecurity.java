@@ -20,13 +20,12 @@ class ApplicationBootSecurity extends WebSecurityConfigurerAdapter {
 
     @Bean
     PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder("morse");
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder("SM3");
     }
 
     @Bean
     AlgorithmFactory algorithmFactory() {
         final Pair<String, String> pair = PredefinedSM2.loadKeys(9);
-
         return () -> new SM2Algorithm(
                 pair.getA(),
                 pair.getB()
