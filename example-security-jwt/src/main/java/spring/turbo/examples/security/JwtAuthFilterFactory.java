@@ -9,6 +9,7 @@ import spring.turbo.module.security.filter.TokenAuthenticationFilter;
 import spring.turbo.module.security.filter.TokenAuthenticationFilterFactory;
 import spring.turbo.module.security.jwt.AbstractJwtTokenToUserConverter;
 import spring.turbo.module.security.jwt.AlgorithmFactory;
+import spring.turbo.module.security.jwt.filter.JwtTokenAuthenticationFilter;
 import spring.turbo.module.security.user.UserDetailsPlus;
 import spring.turbo.util.RandomStringUtils;
 import spring.turbo.webmvc.function.RequestPredicateFactories;
@@ -31,7 +32,7 @@ class JwtAuthFilterFactory implements TokenAuthenticationFilterFactory {
 
     @Override
     public TokenAuthenticationFilter create() {
-        TokenAuthenticationFilter filter = new TokenAuthenticationFilter();
+        JwtTokenAuthenticationFilter filter = new JwtTokenAuthenticationFilter();
         filter.setTokenResolver(tokenResolver);
         filter.setTokenToUserConverter(new JwtTokenToUserConverter(algorithmFactory));
         filter.setAuthenticationEventPublisher(authenticationEventPublisher);
