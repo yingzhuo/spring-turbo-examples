@@ -21,7 +21,7 @@ public class ApplicationBoot implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-//        trigger.fire(ExcelTypes.USER, new ClassPathResource("user.xlsx"));
+        trigger.fire(ExcelTypes.USER, new ClassPathResource("user.xlsx"));
     }
 
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import spring.turbo.module.excel.style.StyleProvider;
 
 @Component
-class MyHeaderStyleProvider  implements StyleProvider {
+class HeaderStyleProvider implements StyleProvider {
 
     @Override
     public CellStyle getStyle(Workbook workbook) {

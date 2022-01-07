@@ -19,7 +19,7 @@ import java.util.Date;
 @Filename("小猫咪.xlsx")
 @Header({"名字", "年龄", "数据日期"})
 @GlobalDatePattern("yyyy-MM-dd")
-@HeaderStyle(type = MyHeaderStyleProvider.class)
+@HeaderStyle(type = HeaderStyleProvider.class)
 public class Cat implements Serializable {
 
     private Long id;

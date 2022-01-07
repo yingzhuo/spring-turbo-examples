@@ -14,9 +14,7 @@ class ApplicationBootMvc {
 
     @Bean(name = "cats-view")
     AnnotationDrivenExcelView<Cat> catView(ApplicationContext applicationContext) {
-        final AnnotationDrivenExcelView<Cat> view = new AnnotationDrivenExcelView<>(applicationContext, Cat.class, "cats");
-//        view.configApplicationContext(applicationContext); // optional
-        return view;
+        return new AnnotationDrivenExcelView<>(applicationContext, Cat.class, "cats");
     }
 
     @Autowired
