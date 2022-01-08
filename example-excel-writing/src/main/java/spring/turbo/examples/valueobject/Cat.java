@@ -2,12 +2,11 @@ package spring.turbo.examples.valueobject;
 
 import lombok.*;
 import spring.turbo.bean.valueobject.Alias;
-import spring.turbo.module.excel.writer.annotation.Filename;
-import spring.turbo.module.excel.writer.annotation.GlobalDatePattern;
-import spring.turbo.module.excel.writer.annotation.Header;
-import spring.turbo.module.excel.writer.annotation.HeaderStyle;
+import spring.turbo.module.excel.writer.annotation.InlineHeader;
+import spring.turbo.module.excel.writer.annotation.Offset;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Getter
@@ -16,10 +15,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Filename("小猫咪.xlsx")
-@Header({"名字", "年龄", "数据日期"})
-@GlobalDatePattern("yyyy-MM-dd")
-@HeaderStyle(type = HeaderStyleProvider.class)
+@Offset(-1)
+@InlineHeader("名字 年龄    数据日期,      售价,   ")
 public class Cat implements Serializable {
 
     private Long id;
@@ -32,5 +29,8 @@ public class Cat implements Serializable {
 
     @Alias(from = "数据日期")
     private Date dataDate;
+
+    @Alias(from = "售价")
+    private BigDecimal price;
 
 }

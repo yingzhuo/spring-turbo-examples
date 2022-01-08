@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 import spring.turbo.examples.valueobject.Cat;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -13,8 +14,8 @@ import java.util.List;
 public class ExcelExportingController {
 
     private final List<Cat> cats = Arrays.asList(
-            new Cat(1L, "米来", 8, new Date()),
-            new Cat(2L, "贵霜", 6, new Date())
+            new Cat(1L, null, 8, new Date(), null),
+            new Cat(2L, "贵霜", 6, null, BigDecimal.ZERO)
     );
 
     @GetMapping("/cats")
