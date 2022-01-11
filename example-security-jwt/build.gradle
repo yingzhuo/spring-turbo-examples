@@ -13,6 +13,7 @@ dependencies {
     implementation(libs.spring.boot.web)
     implementation(libs.spring.boot.security)
     implementation(libs.spring.boot.actuator)
+    implementation(libs.spring.boot.validation)
     implementation(libs.spring.turbo.predefined)
     implementation(libs.spring.turbo.webmvc)
     implementation(libs.spring.turbo.security)
