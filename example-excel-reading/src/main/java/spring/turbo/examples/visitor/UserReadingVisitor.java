@@ -12,7 +12,7 @@ import spring.turbo.module.excel.visitor.BatchVisitor;
 import spring.turbo.module.excel.visitor.ProcessingContext;
 
 @BatchProcessor(discriminatorValue = "USER", valueObjectType = User.class)
-@Password(value = "133810")
+@Password("133810")
 @IncludeSheetSet(sheetIndexes = 0)
 @ExcludeRowSet(sheetIndex = 0, rowIndexes = {1})
 @Header(sheetIndex = 0, rowIndex = 0)
