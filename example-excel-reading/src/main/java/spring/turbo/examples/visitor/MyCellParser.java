@@ -10,8 +10,12 @@ public class MyCellParser extends DefaultCellParser {
     @Override
     public String convert(Cell cell) {
         String s = super.convert(cell);
-        if (s == null) return null;
-        else return s.replaceAll(",", "");
+
+        if (s == null) {
+            return null;
+        } else {
+            return s.replaceAll(",", "");
+        }
     }
 
 }

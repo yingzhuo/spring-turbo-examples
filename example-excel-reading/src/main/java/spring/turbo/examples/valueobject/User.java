@@ -4,6 +4,7 @@ import spring.turbo.bean.valueobject.Alias;
 import spring.turbo.format.DateTimeFormat;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class User implements Serializable {
@@ -22,6 +23,9 @@ public class User implements Serializable {
     @Alias(from = "出生日期")
     @DateTimeFormat
     private Date dob;
+
+    @Alias(from = "工资")
+    private BigDecimal salary;
 
     public Long getId() {
         return id;
@@ -63,6 +67,14 @@ public class User implements Serializable {
         this.dob = dob;
     }
 
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -71,6 +83,8 @@ public class User implements Serializable {
                 ", password='" + password + '\'' +
                 ", roles='" + roles + '\'' +
                 ", dob=" + dob +
+                ", salary=" + salary +
                 '}';
     }
+
 }
