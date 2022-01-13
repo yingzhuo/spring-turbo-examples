@@ -3,8 +3,6 @@ package spring.turbo.examples.valueobject;
 import spring.turbo.bean.valueobject.Alias;
 import spring.turbo.format.DateTimeFormat;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Past;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,16 +14,13 @@ public class User implements Serializable {
     private String username;
 
     @Alias(from = "密码原文")
-    @NotEmpty(message = "密码原文不可为空")
     private String password;
 
     @Alias(from = "权限")
-    @NotEmpty(message = "权限不可为空")
     private String roles;
 
     @Alias(from = "出生日期")
     @DateTimeFormat
-    @Past(message = "出生日期非法")
     private Date dob;
 
     public Long getId() {

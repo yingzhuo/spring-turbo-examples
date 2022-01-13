@@ -23,12 +23,11 @@ import java.util.List;
 @AllArgsConstructor
 class ExcelExportingController {
 
-    private final ApplicationContext applicationContext;
-
     private static final List<Cat> CATS = Arrays.asList(
             new Cat(1L, "米来", 8, new Date(), BigDecimal.TEN),
             new Cat(2L, "贵霜", 6, null, BigDecimal.ZERO)
     );
+    private final ApplicationContext applicationContext;
 
     @GetMapping("/cats")
     public ResponseEntity<byte[]> cat() {

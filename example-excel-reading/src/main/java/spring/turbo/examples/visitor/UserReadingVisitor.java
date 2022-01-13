@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.validation.BindingResult;
 import spring.turbo.examples.valueobject.User;
-import spring.turbo.module.excel.ExcelType;
 import spring.turbo.module.excel.ProcessPayload;
 import spring.turbo.module.excel.batch.Batch;
 import spring.turbo.module.excel.reader.annotation.*;
@@ -16,13 +15,11 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 @BatchProcessor(discriminatorValue = "USER", valueObjectType = User.class)
-@Password(value = "133810", provider = UserPasswordProvider.class)
+@Password(value = "133810")
 @IncludeSheetSet(sheetIndexes = 0)
 @ExcludeRowSet(sheetIndex = 0, rowIndexes = {1})
 @Header(sheetIndex = 0, rowIndex = 0)
-@ColumnBasedCellParser(sheetIndex = 0, columnIndex = 1, type = MyCellParser.class)
-@Type(ExcelType.XSSF)
-@Filter(type = UserFilter.class)
+@ColumnBasedCellParser(sheetIndex = 0, columnIndex = 2, type = MyCellParser.class)
 public class UserReadingVisitor implements BatchVisitor<User> {
 
     @Autowired
