@@ -13,7 +13,6 @@ import spring.turbo.module.security.jwt.filter.JwtTokenAuthenticationFilter;
 import spring.turbo.module.security.user.UserDetailsPlus;
 import spring.turbo.util.RandomStringUtils;
 import spring.turbo.webmvc.function.RequestPredicateFactories;
-import spring.turbo.webmvc.token.TokenResolver;
 
 import java.util.Optional;
 
@@ -21,19 +20,16 @@ import java.util.Optional;
 class JwtAuthFilterFactory implements TokenAuthenticationFilterFactory {
 
     private final AlgorithmFactory algorithmFactory;
-    private final TokenResolver tokenResolver;
     private final AuthenticationEventPublisher authenticationEventPublisher;
 
-    public JwtAuthFilterFactory(AlgorithmFactory algorithmFactory, TokenResolver tokenResolver, AuthenticationEventPublisher authenticationEventPublisher) {
+    public JwtAuthFilterFactory(AlgorithmFactory algorithmFactory, AuthenticationEventPublisher authenticationEventPublisher) {
         this.algorithmFactory = algorithmFactory;
-        this.tokenResolver = tokenResolver;
         this.authenticationEventPublisher = authenticationEventPublisher;
     }
 
     @Override
     public TokenAuthenticationFilter create() {
-        JwtTokenAuthenticationFilter filter = new JwtTokenAuthenticationFilter();
-        filter.setTokenResolver(tokenResolver);
+        final JwtTokenAuthenticationFilter filter = new JwtTokenAuthenticationFilter();
         filter.setTokenToUserConverter(new JwtTokenToUserConverter(algorithmFactory));
         filter.setAuthenticationEventPublisher(authenticationEventPublisher);
         filter.addSkipPredicates(RequestPredicateFactories.pathAntStyleMatches("/**/security/login"));

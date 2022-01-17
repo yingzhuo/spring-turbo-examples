@@ -4,8 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import spring.turbo.bean.Scopes;
+import spring.turbo.bean.valueobject.ValueObjectFilter;
 import spring.turbo.examples.valueobject.User;
-import spring.turbo.module.excel.filter.ValueObjectFilter;
 
 @Slf4j
 @Component
