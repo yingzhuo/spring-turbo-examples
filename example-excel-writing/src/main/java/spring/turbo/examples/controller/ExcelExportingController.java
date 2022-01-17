@@ -27,6 +27,7 @@ class ExcelExportingController {
             new Cat(1L, "米来", 8, new Date(), BigDecimal.TEN),
             new Cat(2L, "贵霜", 6, null, BigDecimal.ZERO)
     );
+
     private final ApplicationContext applicationContext;
 
     @GetMapping("/cats")
