@@ -16,5 +16,8 @@
     <logger name="org.springframework" additivity="true" level="info"/>
     <logger name="org.springframework.boot.context.ApplicationPidFileWriter" additivity="true" level="off"/>
     <logger name="org.springframework.security" additivity="true" level="info"/>
+    <logger name="org.hibernate.validator" additivity="true" level="warn"/>
+    <logger name="io.micrometer" additivity="true" level="info"/>
+    <logger name="org.apache.catalina" additivity="true" level="warn"/>
 
 </configuration>
