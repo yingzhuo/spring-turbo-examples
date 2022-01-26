@@ -3,7 +3,7 @@
 # ======================================================================================================================
 [versions]
 springboot = "2.6.3"
-springturbo = "1.0.11-SNAPSHOT"
+springturbo = "1.0.12-SNAPSHOT"
 
 # ======================================================================================================================
 # 库
@@ -23,6 +23,7 @@ spring-boot-security = { group = "org.springframework.boot", name = "spring-boot
 spring-boot-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator", version.ref = "springboot" }
 
 # spring-turbo
+spring-turbo = { group = "com.github.yingzhuo", name = "spring-turbo", version.ref = "springturbo" }
 spring-turbo-csv = { group = "com.github.yingzhuo", name = "spring-turbo-module-csv", version.ref = "springturbo" }
 spring-turbo-excel = { group = "com.github.yingzhuo", name = "spring-turbo-module-excel", version.ref = "springturbo" }
 spring-turbo-predefined = { group = "com.github.yingzhuo", name = "spring-turbo-module-predefined", version.ref = "springturbo" }

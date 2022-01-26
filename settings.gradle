@@ -2,6 +2,7 @@ enableFeaturePreview('VERSION_CATALOGS')
 
 rootProject.name = 'spring-turbo-examples'
 include 'example-captcha'
+include 'example-core'
 include 'example-excel-reading'
 include 'example-excel-writing'
 include 'example-feign'

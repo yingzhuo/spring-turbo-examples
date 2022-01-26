@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.yingzhuo'
+version '0.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(libs.spring.boot.web)
+    implementation(libs.spring.boot.validation)
+    implementation(libs.spring.boot.actuator)
+    implementation(libs.spring.turbo)
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+test {
+    useJUnitPlatform()
+}
