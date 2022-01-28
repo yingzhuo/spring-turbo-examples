@@ -6,6 +6,7 @@ include 'example-core'
 include 'example-excel-reading'
 include 'example-excel-writing'
 include 'example-feign'
+include 'example-jackson'
 include 'example-qrcode'
 include 'example-security-jwt'
 

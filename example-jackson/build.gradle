@@ -7,9 +7,8 @@ version '0.0.0'
 
 dependencies {
     implementation(libs.spring.boot.web)
-    implementation(libs.spring.boot.validation)
     implementation(libs.spring.boot.actuator)
-    implementation(libs.spring.turbo.excel)
+    implementation(libs.spring.turbo.jackson)
 
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'

@@ -28,6 +28,7 @@ spring-turbo-csv = { group = "com.github.yingzhuo", name = "spring-turbo-module-
 spring-turbo-excel = { group = "com.github.yingzhuo", name = "spring-turbo-module-excel", version.ref = "springturbo" }
 spring-turbo-predefined = { group = "com.github.yingzhuo", name = "spring-turbo-module-predefined", version.ref = "springturbo" }
 spring-turbo-feign = { group = "com.github.yingzhuo", name = "spring-turbo-module-feign", version.ref = "springturbo" }
+spring-turbo-jackson = { group = "com.github.yingzhuo", name = "spring-turbo-module-jackson", version.ref = "springturbo" }
 spring-turbo-qrcode = { group = "com.github.yingzhuo", name = "spring-turbo-module-qrcode", version.ref = "springturbo" }
 spring-turbo-captcha = { group = "com.github.yingzhuo", name = "spring-turbo-module-captcha", version.ref = "springturbo" }
 spring-turbo-security = { group = "com.github.yingzhuo", name = "spring-turbo-module-security", version.ref = "springturbo" }
