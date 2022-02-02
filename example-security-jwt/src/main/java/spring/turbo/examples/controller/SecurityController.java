@@ -7,19 +7,19 @@ import spring.turbo.module.security.user.CurrentUserUsername;
 import spring.turbo.util.StringFormatter;
 
 @RestController
-@RequestMapping("/security")
+@RequestMapping("security")
 class SecurityController {
 
     @Autowired
     private LoginService loginService;
 
-    @PostMapping("/login")
+    @PostMapping("login")
     String token(@RequestParam("username") String username,
                  @RequestParam("password") String password) {
         return loginService.createToken(username, password);
     }
 
-    @GetMapping("/info")
+    @GetMapping("info")
     String info(@CurrentUserUsername String username) {
         return StringFormatter.format("{} 已经登录", username);
     }
