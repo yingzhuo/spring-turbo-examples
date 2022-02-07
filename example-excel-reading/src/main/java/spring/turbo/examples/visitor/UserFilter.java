@@ -17,7 +17,7 @@ final class UserFilter implements ValueObjectFilter<User> {
     }
 
     @Override
-    public boolean filter(User data) {
+    public boolean test(User data) {
         return true;
     }
 
