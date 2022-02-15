@@ -27,9 +27,14 @@ subprojects {
         exclude group: "org.junit.vintage", module: "junit-vintage-engine"
         exclude group: "org.apache.logging.log4j", module: "log4j-to-slf4j"
         exclude group: "com.vaadin.external.google", module: "android-json"
+
+        resolutionStrategy {
+            force "org.slf4j:slf4j-api:1.7.36"
+            force "org.slf4j:jul-to-slf4j:1.7.36"
+        }
     }
 }
 
 wrapper {
-    gradleVersion = '7.3.2'
+    gradleVersion = '7.4'
 }
