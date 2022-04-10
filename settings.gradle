@@ -9,6 +9,7 @@ include 'example-feign'
 include 'example-jackson'
 include 'example-qrcode'
 include 'example-security-jwt'
+include 'example-redis'
 
 dependencyResolutionManagement {
     versionCatalogs {
@@ -17,4 +18,3 @@ dependencyResolutionManagement {
         }
     }
 }
-
