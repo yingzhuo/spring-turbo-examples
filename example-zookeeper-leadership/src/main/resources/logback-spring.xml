@@ -20,4 +20,6 @@
     <logger name="io.micrometer" additivity="true" level="info"/>
     <logger name="org.apache.catalina" additivity="true" level="warn"/>
 
+    <logger name="org.apache.zookeeper" additivity="true" level="info"/>
+
 </configuration>

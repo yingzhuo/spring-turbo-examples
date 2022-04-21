@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 spring:
   application:
-    name: "example-excel-reading"
+    name: "example-zookeeper-leadership"
   autoconfigure:
     exclude:
       - "org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration"
