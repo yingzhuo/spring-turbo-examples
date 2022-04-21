@@ -36,6 +36,7 @@ spring-turbo-security-jwt = { group = "com.github.yingzhuo", name = "spring-turb
 spring-turbo-security-hutool = { group = "com.github.yingzhuo", name = "spring-turbo-module-security-hutool", version.ref = "springturbo" }
 spring-turbo-webmvc = { group = "com.github.yingzhuo", name = "spring-turbo-module-webmvc", version.ref = "springturbo" }
 spring-turbo-redis = { group = "com.github.yingzhuo", name = "spring-turbo-module-redis", version.ref = "springturbo" }
+spring-turbo-zookeeper = { group = "com.github.yingzhuo", name = "spring-turbo-module-zookeeper", version.ref = "springturbo" }
 
 # ======================================================================================================================
 # 包

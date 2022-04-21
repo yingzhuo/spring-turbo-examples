@@ -10,6 +10,7 @@ include 'example-jackson'
 include 'example-qrcode'
 include 'example-security-jwt'
 include 'example-redis'
+include 'example-zookeeper-leadership'
 
 dependencyResolutionManagement {
     versionCatalogs {
