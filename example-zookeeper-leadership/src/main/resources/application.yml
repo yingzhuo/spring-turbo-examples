@@ -54,7 +54,6 @@ spring:
     client-name: "spring-examples"
     database: 0
 
-
 server:
   port: 8080
   ssl:
