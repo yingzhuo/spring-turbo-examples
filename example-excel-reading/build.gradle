@@ -11,8 +11,8 @@ dependencies {
     implementation(libs.spring.boot.actuator)
     implementation(libs.spring.turbo.excel)
 
-    compileOnly 'org.projectlombok:lombok:1.18.22'
-    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
 test {

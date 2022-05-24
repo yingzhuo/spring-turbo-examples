@@ -30,6 +30,7 @@ spring-turbo-predefined = { group = "com.github.yingzhuo", name = "spring-turbo-
 spring-turbo-feign = { group = "com.github.yingzhuo", name = "spring-turbo-module-feign", version.ref = "springturbo" }
 spring-turbo-jackson = { group = "com.github.yingzhuo", name = "spring-turbo-module-jackson", version.ref = "springturbo" }
 spring-turbo-qrcode = { group = "com.github.yingzhuo", name = "spring-turbo-module-qrcode", version.ref = "springturbo" }
+spring-turbo-queryselector = { group = "com.github.yingzhuo", name = "spring-turbo-module-queryselector", version.ref = "springturbo" }
 spring-turbo-captcha = { group = "com.github.yingzhuo", name = "spring-turbo-module-captcha", version.ref = "springturbo" }
 spring-turbo-security = { group = "com.github.yingzhuo", name = "spring-turbo-module-security", version.ref = "springturbo" }
 spring-turbo-security-jwt = { group = "com.github.yingzhuo", name = "spring-turbo-module-security-jwt", version.ref = "springturbo" }
