@@ -11,6 +11,7 @@ dependencies {
     implementation(libs.spring.turbo.qrcode)
     implementation(libs.spring.turbo.webmvc)
     implementation(libs.spring.turbo.queryselector)
+    implementation(libs.spring.turbo.jackson)
 
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'

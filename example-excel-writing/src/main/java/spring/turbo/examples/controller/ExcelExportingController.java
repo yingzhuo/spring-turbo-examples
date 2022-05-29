@@ -12,6 +12,7 @@ import spring.turbo.io.PathUtils;
 import spring.turbo.module.excel.writer.WorkbookBuilder;
 import spring.turbo.module.excel.writer.WorkbookIO;
 import spring.turbo.module.security.webmvc.entity.AttachmentResponseEntity;
+import spring.turbo.util.SetFactories;
 
 import java.math.BigDecimal;
 import java.nio.file.Path;
@@ -34,7 +35,7 @@ class ExcelExportingController {
     public ResponseEntity<byte[]> cat() {
         final Workbook workbook = WorkbookBuilder.newInstance()
                 .applicationContext(applicationContext)
-                .sheet(Cat.class, 0, "猫儿", CATS)
+                .sheet(Cat.class, 0, "猫儿", CATS, SetFactories.newHashSet("名字", "年龄", "售价", "数据日期"))
                 .build();
 
         // 生成Excel临时文件
