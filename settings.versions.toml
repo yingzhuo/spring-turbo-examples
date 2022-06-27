@@ -2,8 +2,8 @@
 # 版本号
 # ======================================================================================================================
 [versions]
-springboot = "2.7.0"
-springturbo = "1.1.0-SNAPSHOT"
+springboot = "2.7.1"
+springturbo = "1.1.1-SNAPSHOT"
 
 # ======================================================================================================================
 # 库
@@ -38,6 +38,7 @@ spring-turbo-security-hutool = { group = "com.github.yingzhuo", name = "spring-t
 spring-turbo-webmvc = { group = "com.github.yingzhuo", name = "spring-turbo-module-webmvc", version.ref = "springturbo" }
 spring-turbo-redis = { group = "com.github.yingzhuo", name = "spring-turbo-module-redis", version.ref = "springturbo" }
 spring-turbo-zookeeper = { group = "com.github.yingzhuo", name = "spring-turbo-module-zookeeper", version.ref = "springturbo" }
+spring-turbo-datasource = { group = "com.github.yingzhuo", name = "spring-turbo-module-datasource", version.ref = "springturbo" }
 
 # ======================================================================================================================
 # 包

@@ -25,7 +25,7 @@ import java.util.List;
 class ExcelExportingController {
 
     private static final List<Cat> CATS = Arrays.asList(
-            new Cat(1L, "米来", 8, new Date(), BigDecimal.TEN),
+            new Cat(1L, "米来米来米来米来米来米来米来米来米来米来米来米来米来米来米来米来米来米来", 8, new Date(), BigDecimal.TEN),
             new Cat(2L, "贵霜", 6, null, BigDecimal.ZERO)
     );
 
