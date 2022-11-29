@@ -1,6 +1,6 @@
 = spring-turbo-examples
 
-image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
+image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
 
 == 需求
 
@@ -12,4 +12,4 @@ image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[link="http://ww
 
 == 使用例子
 
-* link:{docdir}/examples-spring-security-jwt/[SpringSecurity - JWT Token 认证和授权]
+* link:{docdir}/examples-spring-security-jwt/[SpringSecurity - 基于JWT Token 认证和授权]
