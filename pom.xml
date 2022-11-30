@@ -9,6 +9,7 @@
     <version>1.0.0</version>
     <modules>
         <module>examples-spring-security-jwt</module>
+        <module>examples-stateless-captcha</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -245,6 +246,16 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>spring-turbo-module-security</artifactId>
+                <version>${spring.turbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>spring-turbo-module-misc</artifactId>
+                <version>${spring.turbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>spring-turbo-module-webmvc</artifactId>
                 <version>${spring.turbo.version}</version>
             </dependency>
 
