@@ -13,4 +13,5 @@ image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www
 == 使用例子
 
 * link:{docdir}/examples-spring-security-jwt/[基于JWT认证和授权]
+* link:{docdir}/examples-stateful-captcha/[有状态人机验证码生成]
 * link:{docdir}/examples-stateless-captcha/[无状态人机验证码生成]

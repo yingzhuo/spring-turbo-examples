@@ -9,6 +9,7 @@
     <version>1.0.0</version>
     <modules>
         <module>examples-spring-security-jwt</module>
+        <module>examples-stateful-captcha</module>
         <module>examples-stateless-captcha</module>
     </modules>
     <packaging>pom</packaging>
