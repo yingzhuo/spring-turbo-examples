@@ -20,8 +20,8 @@ import spring.turbo.module.security.encoder.PasswordEncoderFactories;
 import spring.turbo.module.security.exception.SecurityExceptionHandler;
 import spring.turbo.module.security.jwt.AlgorithmFactory;
 import spring.turbo.module.security.jwt.AlgorithmFactoryFactories;
-import spring.turbo.webmvc.token.BasicTokenResolver;
-import spring.turbo.webmvc.token.TokenResolver;
+import spring.turbo.module.security.token.BasicTokenResolver;
+import spring.turbo.module.security.token.TokenResolver;
 
 @Configuration
 @EnableWebSecurity

@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import spring.turbo.exception.ValidationException;
 import spring.turbo.module.security.jwt.JwtTokenFactory;
 import spring.turbo.module.security.jwt.JwtTokenMetadata;
+import spring.turbo.module.security.token.Token;
 import spring.turbo.module.security.user.CurrentToken;
 import spring.turbo.webmvc.api.Json;
-import spring.turbo.webmvc.token.Token;
 
 import java.time.Duration;
 

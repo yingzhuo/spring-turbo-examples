@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import spring.turbo.module.security.authentication.UserDetailsFinder;
 import spring.turbo.module.security.filter.BasicAuthenticationFilter;
 import spring.turbo.module.security.filter.BasicAuthenticationFilterFactory;
-import spring.turbo.webmvc.token.TokenResolver;
+import spring.turbo.module.security.token.TokenResolver;
 
 @Component
 public class BasicAuthFilterProvider implements BasicAuthenticationFilterFactory {

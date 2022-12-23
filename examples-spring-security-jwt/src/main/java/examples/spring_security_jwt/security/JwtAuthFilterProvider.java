@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import spring.turbo.module.security.filter.JwtTokenAuthenticationFilter;
 import spring.turbo.module.security.filter.TokenAuthenticationFilter;
 import spring.turbo.module.security.filter.TokenAuthenticationFilterFactory;
-import spring.turbo.webmvc.token.TokenResolver;
+import spring.turbo.module.security.token.TokenResolver;
 
 @Component
 public class JwtAuthFilterProvider implements TokenAuthenticationFilterFactory {
