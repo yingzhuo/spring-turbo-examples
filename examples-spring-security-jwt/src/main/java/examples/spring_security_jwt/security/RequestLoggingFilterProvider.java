@@ -10,8 +10,7 @@ public class RequestLoggingFilterProvider implements RequestLoggingFilterFactory
 
     @Override
     public Filter create() {
-        var filter = new HumanReadableRequestLoggingFilter();
-        return filter;
+        return new HumanReadableRequestLoggingFilter();
     }
 
 }
