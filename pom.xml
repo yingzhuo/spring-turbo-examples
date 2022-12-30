@@ -11,6 +11,7 @@
         <module>examples-spring-security-jwt</module>
         <module>examples-stateful-captcha</module>
         <module>examples-stateless-captcha</module>
+        <module>examples-open-feign</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -47,9 +48,10 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.0.5-SNAPSHOT</spring.turbo.version>
+        <spring.turbo.version>2.0.6-SNAPSHOT</spring.turbo.version>
         <spring.boot.version>3.0.1</spring.boot.version>
         <spring.version>6.0.3</spring.version>
+        <jackson.version>2.14.1</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -259,6 +261,11 @@
                 <artifactId>spring-turbo-module-webmvc</artifactId>
                 <version>${spring.turbo.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>spring-turbo-module-feign</artifactId>
+                <version>${spring.turbo.version}</version>
+            </dependency>
 
             <!-- java-jwt -->
             <dependency>
@@ -267,16 +274,33 @@
                 <version>4.2.1</version>
             </dependency>
 
+            <!-- jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.14.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.14.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.14.1</version>
+            </dependency>
+
             <!-- hutool -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-core</artifactId>
-                <version>5.8.10</version>
+                <version>5.8.11</version>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-crypto</artifactId>
-                <version>5.8.10</version>
+                <version>5.8.11</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
