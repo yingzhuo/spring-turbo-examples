@@ -48,7 +48,7 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.0.6-SNAPSHOT</spring.turbo.version>
+        <spring.turbo.version>2.0.7-SNAPSHOT</spring.turbo.version>
         <spring.boot.version>3.0.1</spring.boot.version>
         <spring.version>6.0.3</spring.version>
         <jackson.version>2.14.1</jackson.version>
