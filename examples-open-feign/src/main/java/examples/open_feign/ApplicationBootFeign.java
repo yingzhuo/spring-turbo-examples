@@ -4,6 +4,6 @@ import org.springframework.context.annotation.Configuration;
 import spring.turbo.module.feign.EnableFeignClients;
 
 @Configuration
-@EnableFeignClients(basePackages = "examples.open_feign")
+@EnableFeignClients
 public class ApplicationBootFeign {
 }
