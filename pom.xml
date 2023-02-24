@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.yingzhuo</groupId>
     <artifactId>spring-turbo-examples</artifactId>
-    <version>1.0.0</version>
+    <version>0.1</version>
     <modules>
         <module>examples-spring-security-jwt</module>
         <module>examples-stateful-captcha</module>
@@ -48,8 +48,8 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.0.12-SNAPSHOT</spring.turbo.version>
-        <spring.boot.version>3.0.2</spring.boot.version>
+        <spring.turbo.version>2.0.13-SNAPSHOT</spring.turbo.version>
+        <spring.boot.version>3.0.3</spring.boot.version>
         <spring.version>6.0.5</spring.version>
         <jackson.version>2.14.2</jackson.version>
     </properties>
@@ -288,6 +288,21 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-parameter-names</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
 

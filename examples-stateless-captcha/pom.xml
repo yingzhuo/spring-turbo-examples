@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>spring-turbo-examples</artifactId>
         <groupId>com.github.yingzhuo</groupId>
-        <version>1.0.0</version>
+        <artifactId>spring-turbo-examples</artifactId>
+        <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>examples-stateless-captcha</artifactId>

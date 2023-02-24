@@ -1,6 +1,8 @@
 package examples.open_feign.feigncli.ret;
 
-public class Contributor {
+import java.io.Serializable;
+
+public class Contributor implements Serializable {
 
     private String login;
     private int contributions;
