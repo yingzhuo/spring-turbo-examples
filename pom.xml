@@ -12,6 +12,7 @@
         <module>examples-stateful-captcha</module>
         <module>examples-stateless-captcha</module>
         <module>examples-open-feign</module>
+        <module>examples-versioned-controller</module>
     </modules>
     <packaging>pom</packaging>
 

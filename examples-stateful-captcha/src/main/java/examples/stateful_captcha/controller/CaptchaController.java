@@ -16,7 +16,7 @@ public class CaptchaController {
 
     @GetMapping("/captcha")
     public ImageResponseEntity captcha() {
-        final var captcha = this.captchaService.get();
+        final var captcha = this.captchaService.create();
 
         return ImageResponseEntity.builder()
                 .status(HttpStatus.OK)

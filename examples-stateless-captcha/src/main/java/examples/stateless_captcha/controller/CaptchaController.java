@@ -19,7 +19,7 @@ public class CaptchaController {
 
     @GetMapping("/captcha")
     public Json captcha() {
-        final var captcha = this.captchaService.get();
+        final var captcha = this.captchaService.create();
         final var encodedCaptcha = EncodedCaptcha.of(captcha);
 
         return Json.newInstance()
