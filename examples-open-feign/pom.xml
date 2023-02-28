@@ -36,10 +36,10 @@
             <artifactId>spring-turbo-module-feign</artifactId>
         </dependency>
 
+        <!-- feign -->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-jackson</artifactId>
-            <version>12.1</version>
         </dependency>
     </dependencies>
 

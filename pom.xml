@@ -318,6 +318,18 @@
                 <artifactId>hutool-crypto</artifactId>
                 <version>5.8.12</version>
             </dependency>
+
+            <!-- feign -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-core</artifactId>
+                <version>12.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-jackson</artifactId>
+                <version>12.2</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
