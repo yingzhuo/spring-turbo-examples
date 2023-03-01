@@ -11,6 +11,7 @@
         <module>examples-spring-security-jwt</module>
         <module>examples-stateful-captcha</module>
         <module>examples-stateless-captcha</module>
+        <module>examples-qrcode-gen</module>
         <module>examples-open-feign</module>
         <module>examples-versioned-controller</module>
     </modules>
@@ -330,6 +331,18 @@
                 <artifactId>feign-jackson</artifactId>
                 <version>12.2</version>
             </dependency>
+
+            <!-- zxing -->
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>3.5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>3.5.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -338,7 +351,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <debug>false</debug>
                     <encoding>${encoding}</encoding>

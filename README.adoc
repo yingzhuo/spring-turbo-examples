@@ -17,3 +17,4 @@ image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www
 * link:{docdir}/examples-stateless-captcha/[无状态人机验证码生成]
 * link:{docdir}/examples-open-feign/[与OpenFeign集成]
 * link:{docdir}/examples-versioned-controller/[带API版本号的Controller]
+* link:{docdir}/examples-qrcode-gen/[生成QR码]
