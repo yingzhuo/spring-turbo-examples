@@ -50,9 +50,9 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.0.13-SNAPSHOT</spring.turbo.version>
-        <spring.boot.version>3.0.3</spring.boot.version>
-        <spring.version>6.0.5</spring.version>
+        <spring.turbo.version>2.0.14-SNAPSHOT</spring.turbo.version>
+        <spring.boot.version>3.0.4</spring.boot.version>
+        <spring.version>6.0.6</spring.version>
         <jackson.version>2.14.2</jackson.version>
     </properties>
 
@@ -357,20 +357,13 @@
                     <encoding>${encoding}</encoding>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-                    <!--
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.springframework.boot</groupId>
-                            <artifactId>spring-boot-configuration-processor</artifactId>
-                            <version>${spring.boot.version}</version>
+                            <version>1.18.26</version>
                         </path>
                     </annotationProcessorPaths>
-                    -->
                 </configuration>
             </plugin>
         </plugins>
