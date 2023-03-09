@@ -21,7 +21,7 @@ public class ApplicationBoot implements ApplicationRunner {
     }
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args) {
         var contributors = githubClient.contributors("yingzhuo", "spring-turbo");
 
         for (var contributor : contributors) {
