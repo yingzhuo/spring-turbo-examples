@@ -6,7 +6,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
-import spring.turbo.module.webmvc.requestcondition.VersionedRequestMappingHandlerMapping;
+import spring.turbo.module.webmvc.support.request.VersionedRequestMappingHandlerMapping;
 import spring.turbo.module.webmvc.version.ServletPathVersionResolver;
 
 import java.util.List;

@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import spring.turbo.module.misc.captcha.CaptchaService;
-import spring.turbo.module.webmvc.entity.ImageResponseEntity;
+import spring.turbo.module.webmvc.support.response.ImageResponseEntity;
 import spring.turbo.util.ImageFormatPool;
 
 @RestController
