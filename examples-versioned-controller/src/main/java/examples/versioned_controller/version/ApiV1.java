@@ -9,5 +9,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @Versioned(value = "v1")
+@Deprecated(forRemoval = true)
 public @interface ApiV1 {
 }
