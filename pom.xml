@@ -51,8 +51,8 @@
         <java.version>17</java.version>
 
         <spring.turbo.version>2.1.2-SNAPSHOT</spring.turbo.version>
-        <spring.boot.version>3.0.4</spring.boot.version>
-        <spring.version>6.0.6</spring.version>
+        <spring.boot.version>3.0.5</spring.boot.version>
+        <spring.version>6.0.7</spring.version>
         <jackson.version>2.14.2</jackson.version>
     </properties>
 
