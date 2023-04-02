@@ -4,11 +4,14 @@ image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www
 
 == 需求
 
-* Java 17+
-* Apache Maven 3.8.0+
-* SpringFramework 6.0.0+
-* SpringBoot 3.0.0+
-* SpringSecurity 6.0.0+
+[options="header",format="psv"]
+|====
+| 软件             | 版本
+| JDK             | 17+
+| SpringFramework | 6.0.0+
+| SpringBoot      | 3.0.0+
+| SpringSecurity  | 6.0.0+
+|====
 
 == 使用例子
 
@@ -18,3 +21,4 @@ image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www
 * link:{docdir}/examples-open-feign/[与OpenFeign集成]
 * link:{docdir}/examples-versioned-controller/[带API版本号的Controller]
 * link:{docdir}/examples-qrcode-gen/[生成QR码]
+* link:{docdir}/examples-use-hocon-configuration/[使用HOCON格式的配置文件]

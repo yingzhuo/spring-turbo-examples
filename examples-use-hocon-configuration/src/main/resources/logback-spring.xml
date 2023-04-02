@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}]%-5level %logger{72}[%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="org.springframework" additivity="true" level="info"/>
+    <logger name="org.springframework.core.LocalVariableTableParameterNameDiscoverer" additivity="true" level="off"/>
+    <logger name="org.springframework.boot.context.ApplicationPidFileWriter" additivity="true" level="off"/>
+    <logger name="org.springframework.security.web.DefaultSecurityFilterChain" additivity="true" level="info"/>
+    <logger name="org.springframework.security.config.annotation.web.builders.WebSecurity" additivity="true"
+            level="error"/>
+    <logger name="org.jboss.logging" additivity="true" level="warn"/>
+    <logger name="io.micrometer" additivity="true" level="warn"/>
+    <logger name="org.hibernate.validator" additivity="true" level="warn"/>
+    <logger name="org.apache.catalina" additivity="true" level="warn"/>
+    <logger name="_org.springframework.web.servlet.HandlerMapping.Mappings" additivity="true" level="info"/>
+
+</configuration>
