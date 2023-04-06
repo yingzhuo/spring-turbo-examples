@@ -15,6 +15,7 @@
         <module>examples-open-feign</module>
         <module>examples-versioned-controller</module>
         <module>examples-use-hocon-configuration</module>
+        <module>examples-random-avatar-gen</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -104,7 +105,7 @@
             <dependency>
                 <groupId>com.auth0</groupId>
                 <artifactId>java-jwt</artifactId>
-                <version>4.3.0</version>
+                <version>4.4.0</version>
             </dependency>
 
             <!-- jackson -->
@@ -173,6 +174,13 @@
                 <groupId>com.google.zxing</groupId>
                 <artifactId>javase</artifactId>
                 <version>3.5.1</version>
+            </dependency>
+
+            <!-- avatar-generator -->
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>avatar-generator</artifactId>
+                <version>1.0.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
