@@ -15,7 +15,7 @@ public class AvatarController {
 
     @GetMapping("/avatar")
     public ImageResponseEntity avatar() {
-        var img = avatar.create(123456L);
+        var img = avatar.create(1234567890L);
         return ImageResponseEntity.builder()
                 .format(ImageFormatPool.PNG)
                 .image(img)
