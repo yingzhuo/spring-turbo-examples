@@ -1,5 +1,6 @@
 package examples.spring_security_jwt;
 
+import com.auth0.jwt.algorithms.Algorithm;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,8 +19,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import spring.turbo.module.security.encoder.EncodingIds;
 import spring.turbo.module.security.encoder.PasswordEncoderFactories;
 import spring.turbo.module.security.exception.SecurityExceptionHandler;
-import spring.turbo.module.security.jwt.AlgorithmFactory;
-import spring.turbo.module.security.jwt.AlgorithmFactoryFactories;
 import spring.turbo.module.security.token.BasicTokenResolver;
 import spring.turbo.module.security.token.TokenResolver;
 
@@ -33,8 +32,8 @@ import spring.turbo.module.security.token.TokenResolver;
 public class ApplicationBootSecurity {
 
     @Bean
-    public AlgorithmFactory algorithmFactory() {
-        return AlgorithmFactoryFactories.hmac512(ApplicationBootSecurity.class.getName());
+    public Algorithm algorithm() {
+        return Algorithm.HMAC512("this-is-my-secret");
     }
 
     @Primary
