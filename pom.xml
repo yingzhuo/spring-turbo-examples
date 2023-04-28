@@ -52,9 +52,9 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.2.2-SNAPSHOT</spring.turbo.version>
-        <spring.boot.version>3.0.5</spring.boot.version>
-        <spring.version>6.0.7</spring.version>
+        <spring.turbo.version>2.2.3.Final</spring.turbo.version>
+        <spring.boot.version>3.0.6</spring.boot.version>
+        <spring.version>6.0.8</spring.version>
         <jackson.version>2.14.2</jackson.version>
     </properties>
 
