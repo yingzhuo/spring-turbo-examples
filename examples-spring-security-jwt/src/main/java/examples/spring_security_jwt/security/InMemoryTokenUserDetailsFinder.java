@@ -19,6 +19,11 @@ public class InMemoryTokenUserDetailsFinder implements UserDetailsFinder {
     }
 
     @Override
+    public UserDetails loadUserByUsername(String username) throws AuthenticationException {
+        return userDetailsService.loadUserByUsername(username);
+    }
+
+    @Override
     public UserDetails loadUserByUsernameAndPassword(String username, String password) throws AuthenticationException {
         final UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         if (userDetails == null) {

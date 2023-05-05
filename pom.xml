@@ -52,7 +52,7 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>2.2.3.Final</spring.turbo.version>
+        <spring.turbo.version>2.2.4-SNAPSHOT</spring.turbo.version>
         <spring.boot.version>3.0.6</spring.boot.version>
         <spring.version>6.0.8</spring.version>
         <jackson.version>2.14.2</jackson.version>
@@ -144,12 +144,17 @@
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-core</artifactId>
-                <version>5.8.16</version>
+                <version>5.8.18</version>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-crypto</artifactId>
-                <version>5.8.16</version>
+                <version>5.8.18</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-jwt</artifactId>
+                <version>5.8.18</version>
             </dependency>
 
             <!-- feign -->

@@ -10,12 +10,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import spring.turbo.exception.ValidationException;
 import spring.turbo.module.security.jwt.JwtTokenFactory;
-import spring.turbo.module.security.jwt.JwtTokenMetadata;
 import spring.turbo.module.security.token.Token;
 import spring.turbo.module.security.user.CurrentToken;
 import spring.turbo.webmvc.api.Json;
-
-import java.time.Duration;
 
 @RestController
 @RequestMapping("/security")
@@ -44,13 +41,11 @@ public class SecurityController {
         }
 
         if (passwordEncoder.matches(vo.getPassword(), user.getPassword())) {
-            final String token = tokenFactory.create(
-                    JwtTokenMetadata.builder()
-                            .putPayloadClaim("username", vo.getUsername())
-                            .putPayloadClaim("roles", getRole(user))
-                            .expiresAtFuture(Duration.ofDays(30))
-                            .build()
-            );
+            var data = JwtTokenFactory.Data.newInstance()
+                    .addPayload("username", user.getUsername())
+                    .addPayload("roles", getRole(user));
+
+            var token = tokenFactory.create(data);
 
             return Json.newInstance()
                     .payload("token", token);

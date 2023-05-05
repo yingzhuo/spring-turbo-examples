@@ -1,6 +1,6 @@
 package examples.spring_security_jwt;
 
-import com.auth0.jwt.algorithms.Algorithm;
+import cn.hutool.jwt.signers.JWTSigner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +19,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import spring.turbo.module.security.encoder.EncodingIds;
 import spring.turbo.module.security.encoder.PasswordEncoderFactories;
 import spring.turbo.module.security.exception.SecurityExceptionHandler;
+import spring.turbo.module.security.jwt.algorithm.SignerFactories;
 import spring.turbo.module.security.token.BasicTokenResolver;
 import spring.turbo.module.security.token.TokenResolver;
 
@@ -32,8 +33,8 @@ import spring.turbo.module.security.token.TokenResolver;
 public class ApplicationBootSecurity {
 
     @Bean
-    public Algorithm algorithm() {
-        return Algorithm.HMAC512("this-is-my-secret");
+    public JWTSigner jwtSigner() {
+        return SignerFactories.HS256(ApplicationBootSecurity.class.getName());
     }
 
     @Primary
