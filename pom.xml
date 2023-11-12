@@ -52,10 +52,10 @@
         <encoding>UTF-8</encoding>
         <java.version>17</java.version>
 
-        <spring.turbo.version>3.1.2</spring.turbo.version>
-        <spring.boot.version>3.1.2</spring.boot.version>
-        <spring.version>6.0.11</spring.version>
-        <jackson.version>2.15.2</jackson.version>
+        <spring.turbo.version>3.1.5</spring.turbo.version>
+        <spring.boot.version>3.1.5</spring.boot.version>
+        <spring.version>6.0.13</spring.version>
+        <jackson.version>2.15.3</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -137,24 +137,24 @@
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-core</artifactId>
-                <version>5.8.21</version>
+                <version>5.8.22</version>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-crypto</artifactId>
-                <version>5.8.21</version>
+                <version>5.8.22</version>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-jwt</artifactId>
-                <version>5.8.21</version>
+                <version>5.8.22</version>
             </dependency>
 
             <!-- feign -->
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-core</artifactId>
-                <version>12.4</version>
+                <version>12.5</version>
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>
@@ -198,7 +198,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.26</version>
+                            <version>1.18.30</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
